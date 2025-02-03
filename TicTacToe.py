@@ -1,9 +1,13 @@
-def board():
+def InitializeBoard(board):
     for i in range(3):
-        print("[.]", end = " ")
-        for j in range(2):
-            print("[.]", end = " ")
-        print("|")
+        for j in range(3):
+            print(f"[{board[i][j]}]", end=" ")
+        print()
+    
+
+InitializeBoard()
+
+   
+        
 
 
-board()
